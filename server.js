@@ -32,6 +32,8 @@ app.use(quoteRoute);
 // added a 404 page
 app.use(errorController.pageNotFound);
 
+app.use("/.netlify/functions/server", quoteRoute);
+
 // setting the port of the process or a default port
 app.listen(process.env.PORT || 3000, function () {
   console.log("listening on port: 3000");
