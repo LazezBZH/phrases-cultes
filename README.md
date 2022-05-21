@@ -6,13 +6,13 @@ Inspirée de https://github.com/FotieMConstant/geek-quote-api
 
 ## Production host
 
-à vennir
+https://phrases-cultes.herokuapp.com/
 
 ## APIs
 
       GET /v1/quote
 
-Returns an object with one quote:
+Returns an object with one random quote:
 
     {"id":"28",
     "quote":"Mais je vous en prie. Figurez-vous que Thérèse n’est pas moche. Elle n’a pas un physique facile… C’est différent",
@@ -159,7 +159,6 @@ Returns an array with all quotes with the searched keyword:
 Once you've cloned this repo,
 
       run npm install
-
 
 to install the dependencies.
 

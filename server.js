@@ -23,7 +23,9 @@ app.all("*", (req, res, next) => {
 // the various endpoints
 // get all quotes
 app.get("/", (req, res) => {
-  res.send("répliques-api.");
+  res.send(
+    "<h1>Répliques API.</h1><p><i>Une API permettant d'optenir des répliques cultes de films francophones</i></p><br/> <h2>End-points</h2> <h3>GET /v1/quote</h3><p>Returns an object with one random quote</p><p>Renvoie une réplique aléatoire</p> <h3>GET /v1/quotes</h3><p>Returns an array of all quotes</p><p>Renvoie un tableau de toutes les répliques</p> <h3>GET /v1/quote/<count> e.g GET /v1/quote/4</h3><p>Returns an array of the number of quotes specified</p><p>Renvoie un tableau avec le nombre spécifié de répliques</p> <h3>GET /v1/quote/filter/{{keyword}} e.g GET /v1/quote/filter/bien</h3><p>Returns an object with random quote with the searched keyword</p><p>Renvoie une réplique aléatoire contenant le mot clé</p> <h3>GET /v1/quote/filter/all/{{keyword}} e.g GET /v1/quote/filter/all/bien</h3><p>Returns an array with all quotes with the searched keyword</p><p>Renvoie un tableau de toutes les répliques contenant le mot clé</p> <p><a href='https://github.com/LazezBZH/phrases-cultes' target='blank'>Lien GitHub</a></p>"
+  );
 });
 
 // get all quotes api request
